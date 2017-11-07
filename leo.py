@@ -288,12 +288,15 @@ def bot(op):
                 else:
                     cl.cancelGroupInvitation(op.param1, matched_list)
                     
-        #-----------------NOTIFED MEMBER KICKOUT GROUP
-        if op.type == 19:
-            if op.param2 in Bots:
-                return
-            kk.sendText(op.param1,cl.getContact(op.param2).displayName + " Hayoo Kakak Ngapain")
-            print "Anggota Grup Di Kick"
+        #-----------------NOTIFED MEMBER KICKOUT GROUP---------#      	
+	if op.type == 19:
+           if op.param2 in Bots:
+              random.choice(KAC).kickoutFromGroup(op.param1,[op.$
+              random.choice(KAC).inviteIntoGroup(op.param1,[op.p$
+              cl.acceptGroupInvitationByTicket(op.param1,Ti)
+              time.sleep(0.0)
+           else:
+               pass	
         #-----------------NOTIFED MEMBER KICKOUT GROUP
 
         if op.type == 19:
